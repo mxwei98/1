@@ -1,29 +1,461 @@
 *{
-	margin : 0;
-	padding: 0;
-	box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
-html, body {
-	width: 100%;
-	height: 100%;
+ html, body {
+     width: 100%;
+     height: 100%;
 }
-.khoi {
-	text-align: center;
-	width: 40%;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	border: 1px solid gray;
+ .menu {
+     width: 100%;
+     position: fixed;
+     height: 80px;
+     background-color: transparent;
+     z-index: 2;
+     display: flex;
+     justify-content: space-between;
 }
-.tieude {
-	background : #3498db;
-	padding-top: 9px;
-	padding-bottom: 9px;
-	margin-bottom: 0;
+ #product {
+     width: 100%;
+     height: 100%;
+     background-color: #e91e63;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 0.4s;
 }
-.khoi p {
-	background : #f39c12;
-	padding: 16px;
-	margin-bottom: 0;
-	width: 100%;
-	height: 100%;
+ .brand {
+     display: flex;
+     align-items: center;
+}
+ .right_menu {
+     height: 100%;
+     width: 40%;
+}
+ .right_menu ul {
+     display: flex;
+     text-align: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+}
+ .right_menu ul li{
+     list-style-type: none;
+     margin-right: 29px;
+     color: #e2d2d2;
+     font-weight: bold;
+     cursor: pointer;
+     font-size: 17px;
+}
+ .brand a{
+     color: white;
+     text-decoration: none;
+     padding-left: 20px;
+     font-size: 22px;
+     font-weight: bold;
+}
+ .anh_product {
+     width: 50%;
+     height: 100%;
+     background-size: 80%;
+     background-position: 78% 77%;
+     background-repeat: no-repeat;
+}
+ .phai_product {
+     width: 50%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     padding-right: 180px;
+     padding-top: 200px;
+}
+ .phai_product h2{
+     color: white;
+     font-weight: bold;
+     padding-bottom: 32px;
+}
+ .phai_product p {
+     color: white;
+}
+ .phai_product .button1{
+     padding: 10px 20px;
+     border-radius: 6px;
+     border: 1px solid #d81b60;
+     text-transform: uppercase;
+     color: white;
+     font-weight: bold;
+     background-color: #ff4081;
+}
+ .phai_product .button2{
+     text-transform: uppercase;
+     padding: 10px 20px;
+     margin-left: 16px;
+     color: #ff4081;
+     font-weight: bold;
+     background-color: white;
+     border: 1px solid #d81b60;
+     border-radius: 5px;
+}
+ #features{
+     background-color: #FAFAFA;
+     width: 100%;
+     height: auto;
+     padding: 0 8%;
+     transition: 0.4s;
+     padding-bottom: 11rem;
+}
+ .tren {
+     text-align: center;
+     padding-top: 85px;
+     color: #d81b60;
+}
+ .tren p {
+     padding-top: 20px;
+     font-size: 20px;
+     color: black;
+     text-align: center;
+     padding-left: 32%;
+     padding-right: 32%;
+     padding-bottom: 2rem;
+}
+ .tren h2 {
+     font-size: 35px;
+     font-weight: 700;
+}
+ .duoi {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+ .the{
+     width: 30%;
+     text-align: center;
+     background-color: white;
+     margin-top: 2rem;
+     border: 1px solid #FAFAFA;
+     border-radius: 10px;
+}
+ .icon {
+     padding-top : 2rem;
+     font-size : 50px;
+     color : #d81b60;
+}
+ .the span {
+     font-size : 20px;
+     font-weight : 500;
+}
+ .the p {
+     padding-top : 20px;
+     font-weight : 400;
+}
+ .the:hover {
+     box-shadow: 1px 1px 10px #666;
+}
+ .mauhong {
+     background-color: rgb(216, 27, 96) !important;
+}
+ .product2 {
+     height: 100%;
+     display: flex;
+     width: auto;
+}
+ .duoitrai {
+     background-image: url('file:///E:/hoc/Web%20Developer/Projects/JqueryOnePage/Jquery/images/product2.jpg');
+     width: 50%;
+     height: 100%;
+     background-repeat: no-repeat;
+}
+ .duoiphai {
+     width: 50%;
+     height: auto;
+     padding: 3rem;
+}
+ .duoiphai a {
+     color: #d81b60;
+     font-weight: 800;
+     font-size: 30px;
+}
+ a:hover {
+     color : #d81b60;
+     text-decoration: none;
+}
+ .duoiphai p {
+     margin: 40px 0;
+     font-size: 21px;
+}
+ .duoiphai ul {
+     list-style-position: inside;
+     color: #d81b60;
+}
+ .duoiphai ul li {
+     padding: 6px 0;
+     line-height: 1.55em;
+     font-size: 1rem;
+     color: #d81b60;
+}
+ .duoiphai button {
+     padding: 13px 29px;
+     background-color: #ff4081 !important;
+     color: white;
+     font-weight: bold;
+     text-transform: uppercase;
+     border: 1px solid transparent;
+     border-radius: 4px;
+}
+ #pricing {
+     width: 100%;
+     text-align: center;
+     background-color: #FAFAFA;
+     padding-bottom: 7rem;
+     padding-right: 8%;
+     padding-left: 8%;
+}
+ .thongtin {
+     text-align: center;
+     width: 30%;
+     margin: 0 auto;
+}
+ .thongtin h3 {
+     color: #d81b60;
+     font-weight: 900;
+     font-size: 2.3rem;
+     padding-bottom: 1rem;
+     padding-top: 7rem;
+}
+ .thongtin span {
+     font-size: 1.25rem;
+     font-weight: 500;
+}
+ .group {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+ .group ul {
+     list-style-type: none;
+}
+ .group .the {
+     margin-top: 5rem;
+     padding-top: 2rem;
+     padding-bottom: 1rem;
+}
+ #pricing .group .the2 {
+     margin-top: 2rem;
+     padding-top: 5rem;
+     padding-bottom: 3rem;
+     margin-bottom: -2rem;
+}
+ .group .the h5 {
+     font-weight: 700;
+     font-size: 24px;
+}
+ .group .the h3{
+     margin-top: 2rem;
+     color: #d81b60;
+     font-weight: 800;
+}
+ .group .the p{
+     padding-top: 0;
+     color: gray;
+     font-size: 18px;
+}
+ .group .the hr{
+     width: 90%;
+    /* text-align: justify;
+     */
+     margin-left: 5%;
+}
+ .group .the li {
+     padding-top: 1rem;
+     font-weight: 500;
+}
+ .group .the button {
+     background-color: #ff4081;
+     margin-top: 2rem;
+     padding: 15px 20px;
+     color: white;
+     font-weight: 700;
+     text-transform: uppercase;
+     border: 1px solid white;
+     border-radius: 30px;
+}
+ .benduoi {
+     margin-top: 10rem;
+}
+ .bentrong {
+     width: 50%;
+     text-align: center;
+     margin: 0 auto;
+}
+ .benduoi h5{
+     color: #d81b60;
+     font-weight: 800;
+}
+ .benduoi p {
+     margin-top: 2rem;
+     font-weight: 600;
+}
+ .benduoi .cacanh {
+     margin-top: 3rem;
+}
+ .benduoi .cacanh img{
+     width: 170px;
+     padding: 0 .3rem;
+     cursor: pointer;
+}
+ button {
+     cursor: pointer;
+}
+ button:focus {
+    outline:0;
+}
+ #team {
+     padding: 5rem 80px;
+     width: 100%;
+}
+ .text {
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+}
+ .text h3 {
+     color: #d81b60;
+     font-size: 31px;
+     font-weight: 700;
+     margin-bottom: 1.5rem;
+}
+ .text span {
+     font-size: 1.3rem;
+}
+ #team .cacthanhvien {
+     margin-top: 4rem;
+     display: flex;
+     justify-content: center;
+}
+ .thanhvien {
+     width: 25%;
+     text-align: center;
+}
+ .thanhvien img {
+     width: 150px;
+     border-radius: 50%;
+}
+ .thanhvien h5{
+     margin-top: 2rem;
+     margin-bottom: 1rem;
+}
+ .thanhvien span {
+     color: #808080ab;
+}
+ #blog2 {
+     width: 100%;
+     padding: 5rem 80px !important;
+     background-color: #FAFAFA !important;
+}
+ .thes {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+ .thes .the img{
+     width: 100%;
+}
+ .thes .the {
+     border-radius: 0;
+     text-align: left;
+}
+ .detail-to {
+     padding : 1rem;
+}
+ .details i {
+     padding-right: 15px;
+     font-size : .9rem;
+     color : #808080ba;
+}
+ .details i:before {
+     padding-right: 4px;
+}
+ .duoi-details {
+     margin-top: 1.3rem;
+}
+ .duoi-details .a1{
+     color: #d81b60;
+     font-weight : 800;
+     font-size : 1.2rem;
+     line-height : normal;
+}
+ .duoi-details p {
+     padding-top: 10px;
+     margin-bottom: 2rem;
+}
+ .thea {
+     text-align : right !important;
+}
+ .thea .a2 {
+     color : #d81b60;
+     font-weight: bold;
+}
+ #contact {
+     width: 100%;
+     padding: 0 80px !important;
+     background : linear-gradient(-45deg, #ec407a 33%, transparent 0%), linear-gradient(-45deg, #e91e63 67%, transparent 33%), linear-gradient(-45deg, #ec407a 100%, transparent 67%);
+}
+ .maudo {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 200px;
+     color: white;
+}
+ .khoinho {
+     width: 33%;
+     height: 100%;
+     text-align: center;
+     padding: 1.5rem 1.5rem;
+    
+}
+ .khoinho i {
+     font-size: 3.5rem;
+}
+ .khoinho span {
+     font-size: 1.5rem;
+}
+ .khoinho p {
+     margin-bottom : 0;
+}
+ .footer {
+     background-color: #171717;
+     width: 100%;
+     padding: 5rem 8% !important;
+     text-align : center;
+}
+ .footer h3 {
+     color : #80808087;
+     font-weight : bold;
+     font-size : 2.5rem;
+     padding-bottom : 10px;
+}
+ .footer i {
+     font-size : 2rem;
+     color : #d81b60;
+     cursor : pointer;
+}
+ .footer i:hover {
+     color : #00aced;
+}
+ .footer p {
+     width : 50%;
+     margin : 1.5rem auto;
+     color : #a28989;
+}
+ .footer a {
+     color : #d81b60;
 }
